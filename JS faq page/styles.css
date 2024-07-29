@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Open+Sans:wght@800&display=swap');
+/* || RESET || */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+    /* border: 1px solid black; */
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Maven Pro', sans-serif;
+    color: #2D2D34;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* || PAGE STYLES || */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #CEB1BE;
+}
+
+#mainTitle {
+    margin-bottom: 1rem;
+}
+
+/* || CARD STYLES || */
+
+#cardsSection {
+    width: 80%;
+}
+
+.card {
+    margin: 1rem 0 1rem 0;
+    padding: 1.25rem;
+    box-shadow: rgba(18, 18, 20, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    background-color: #F1E4E8; 
+
+}
+
+.cardTitle {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardIcon {
+    font-size: 1.5rem;
+    color: #B97375;
+    transition: all .25s ease;
+}
+
+.cardIcon:hover {
+    transform: rotate(90deg);
+}
+
+.cardLine {
+    margin: .75rem 0 .75rem;
+    border-top: 1px solid #2D2D34;
+}
+
+.cardInfo {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+

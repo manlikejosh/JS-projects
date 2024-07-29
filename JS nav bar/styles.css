@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Open+Sans:wght@800&display=swap");
+
+@keyframes toggleBtnAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
+}
+
+/* || RESET || */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Maven Pro", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* || STYLES || */
+
+@media screen and (min-width: 645px) {
+  nav {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+  }
+  #rocksColor {
+    color: #f28c28;
+    text-shadow: 3px 3px 2px lightgray;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    margin-left: 1rem;
+  }
+
+  nav li:first-child {
+    margin-left: 0;
+  }
+
+  #icons {
+    font-size: 1.25rem;
+    color: #f28c28;
+  }
+
+  #icons i {
+    margin-left: 0.5rem;
+  }
+
+  #icons i:first-child {
+    margin-left: 0;
+  }
+
+  #toggleNavBar {
+    display: none;
+  }
+}
+
+/* || NAV BAR SMALL || */
+
+/* main */
+
+@media screen and (max-width: 644px) {
+  nav {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 2px -2px lightgray;
+  }
+
+  #icons {
+    display: none;
+  }
+
+  /* Title */
+  #navTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #rocksColor {
+    color: #f28c28;
+    text-shadow: 3px 3px 2px lightgray;
+  }
+
+  /* Toggle Button */
+
+  #toggleNavBar {
+    display: block;
+    transition: all 0.5s ease;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 1.25rem;
+  }
+  #toggleNavBar:hover {
+    transform: rotate(90deg);
+  }
+
+  /* Links */
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.75s ease-in-out;
+  }
+
+  .showLink {
+    height: 9rem;
+    overflow: hidden;
+  }
+
+  .links li {
+    margin-top: 1rem;
+  }
+}
+
+h3 {
+  padding: 10px;
+  text-align: center;
+  margin-top: 10vh;
+}
