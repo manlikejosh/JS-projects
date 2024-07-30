@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Open+Sans:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Open+Sans:wght@800&display=swap");
 
 /* * {
     border: 1px solid black;
 } */
 body {
-  font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   display: flex;
+  height: 80vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -32,8 +33,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-/*   border: 1px solid black; */
-  
+  /*   border: 1px solid black; */
 }
 
 #pic {
@@ -44,15 +44,14 @@ body {
 }
 
 img {
-    max-width:100%;
-    max-height: 100%;
-    border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
 }
 
 #picText {
   text-align: center;
   font-weight: bolder;
-
 }
 
 #name {
@@ -60,15 +59,15 @@ img {
 }
 
 #jobTitle {
-    font-size: .8rem;
-    margin: 0;
+  font-size: 0.8rem;
+  margin: 0;
 }
 
 #text {
   display: flex;
   align-items: center;
   text-align: center;
-/*   border: 1px solid black; */
+  /*   border: 1px solid black; */
   width: 90%;
 }
 
@@ -81,6 +80,6 @@ button {
 #randomButton {
   font-size: 1rem;
   font-weight: normal;
-  border:3px solid black;
+  border: 3px solid black;
   border-radius: 5px;
 }
