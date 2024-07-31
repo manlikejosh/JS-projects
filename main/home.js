@@ -4,10 +4,22 @@ const temp = document.createElement("template");
 
 temp.innerHTML = `
     <button 
-        style="padding:5px; border: 2px solid black; margin: 10px; border-radius:100%;"
-        onclick="window.location.href='/Users/josh/Desktop/JS projects/main/index.html'">
-        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="3rem" height="3rem" viewBox="0 0 495.398 495.398"
+        style="
+		padding:8px;  
+		margin: 10px; 
+		border-radius:100%; 
+		width:3.5rem; 
+		height: 3.5rem; 
+		background: #F7DBA7; 
+		border: 1.5px solid #EE6352;"
+        onclick="window.location.href='../main/index.html'">
+
+        <svg  
+		version="1.1" id="Capa_1" 
+		xmlns="http://www.w3.org/2000/svg" 
+		xmlns:xlink="http://www.w3.org/1999/xlink" 
+	  	viewBox="0 0 495.398 495.398" 
+	  	fill="#EE6352"
 	 xml:space="preserve">
 <g>
 	<g>

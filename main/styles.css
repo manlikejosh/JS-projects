@@ -65,8 +65,14 @@ h6 {
 
 /* PAGE STYLES */
 body {
-  background: #f0ead6;
-  font-family: "Cardo", serif;
+  /* background: #f0ead6; */
+  background: rgb(255, 122, 112);
+  background: radial-gradient(
+    circle,
+    rgba(255, 122, 112, 1) 0%,
+    rgba(240, 234, 214, 1) 70%
+  );
+
   font-weight: 700;
   font-style: normal;
   color: #2e4045;
@@ -92,6 +98,7 @@ ul {
   margin: 1rem auto;
   background: #aad59e;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 ul .card {
@@ -99,16 +106,17 @@ ul .card {
   height: fit-content;
   margin: 12px 0px;
   background: #f0ead6;
-  border: 2px solid #cdbcdb;
+  border: 5px solid #cdbcdb;
   border-radius: 10px;
 
   display: flex-column;
 
   transition: all 1s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 
 .card figure {
-  padding: 0.3rem;
+  padding: 0.5rem;
 }
 
 figure img {
@@ -127,8 +135,8 @@ figure img {
 .card button {
   padding: 5px 20px;
   margin-top: 0.5rem;
-
-  border: 2px solid #cdbcdb;
+  background: #cdbcdb;
+  border: none;
   border-radius: 5px;
 }
 
